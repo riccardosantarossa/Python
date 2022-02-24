@@ -5,7 +5,7 @@ arr = np.random.randint(0, high=255,size=(100,100))
 
 #crea un quadrato bianco al centro
 np_white = np.ones((20,20))*255 #crea array di pixel bianchi
-x_offset =int(np_white.shape[0]/2)#shapoe ritorna la lista con il valore della larghezza della matrice x righe y colonne
+x_offset =int(np_white.shape[0]/2)#shape ritorna la lista con il valore della larghezza della matrice x righe y colonne
 y_offset =int(np_white.shape[1]/2)
 
 x_start = int(arr.shape[0]/2)-x_offset
