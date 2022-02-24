@@ -1,3 +1,5 @@
+#SANTAROSSA RICCARDO
+
 import numpy as np
 from PIL import Image   #dal modulo pil importiamo l'oggetto image
 arr = np.random.randint(0, high=255,size=(100,100))
