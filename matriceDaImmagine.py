@@ -3,7 +3,7 @@
 import numpy as np 
 from PIL import Image
 
-img = Image.open("images/linusBW.jpg")
+img = Image.open("images/mercedes.jpg")
 img = img.convert('L')
 img.show()
 
