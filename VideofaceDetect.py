@@ -14,7 +14,7 @@ anterior = 0
 
 while True:
     if not video_capture.isOpened():
-        print('Unable to load camera.')
+        print('Telecamera non trovata.')
         sleep(5)
         pass
 
