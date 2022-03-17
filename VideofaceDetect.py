@@ -1,7 +1,6 @@
 #SANTAROSSA RICCARDO
 
 import cv2
-import sys
 import logging as log
 import datetime as dt
 from time import sleep
@@ -26,7 +25,7 @@ while True:
 
     faces = faceCascade.detectMultiScale(
         gray,
-        scaleFactor=1.1,
+        scaleFactor=1.2,
         minNeighbors=5,
         minSize=(30, 30)
     )
