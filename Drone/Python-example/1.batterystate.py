@@ -6,6 +6,3 @@ me.connect()
 
 print(me.get_battery())
 
-me.takeoff()
-sleep(1)
-me.land()
