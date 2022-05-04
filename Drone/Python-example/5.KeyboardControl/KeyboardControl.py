@@ -18,7 +18,7 @@ def getKeyboardInput():
 
     lr, fb, ud, yv = 0, 0, 0, 0
 
-    speed = 20
+    speed = 90
 
     if kp.getKey("LEFT"): lr = -speed
 
@@ -36,11 +36,16 @@ def getKeyboardInput():
 
     elif kp.getKey("d"): yv = speed
 
-    if kp.getKey("q"): me.land(); sleep(3)
+    if kp.getKey("q"): me.land(); sleep(2)
 
     if kp.getKey("e"): me.takeoff()
 
+    if kp.getKey("f"): me.flip_right()
+
+    if kp.getKey("g"): me.flip_forward()
+
     return [lr, fb, ud, yv]
+
 
 while True:
 
@@ -49,7 +54,6 @@ while True:
     img = me.get_frame_read().frame
     img = cv2.resize(img, (800, 600))
     cv2.imshow("Image", img)
-    #cv2.waitKey(1)
 
     me.send_rc_control(vals[0], vals[1], vals[2], vals[3])
     sleep(0.05)
