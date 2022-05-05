@@ -9,9 +9,15 @@ from time import sleep
 import keyboard
 from datetime import datetime
 
+from numpy import eye
+
 #Seleziono il file da cui importare il dataset del riconoscimento
+#Faccia frontale
 cascPath = "haarcascade_frontalface_default.xml"
-faceCascade = cv2.CascadeClassifier(cascPath)
+#Occhiolino
+eyepath = "haarcascade_lefteye_2splits.xml"
+
+faceCascade = cv2.CascadeClassifier(eyepath)
 #Salvo sul file di log gli eventuali errori
 log.basicConfig(filename='webcam.log',level=log.INFO)
 
